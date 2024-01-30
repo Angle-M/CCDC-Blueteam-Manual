@@ -4,18 +4,6 @@
 
 The events that you will encounter in CCDC will be correlated to real paths attackers will take, but the competition is a bit gamified in order to present a challenge to both the blue team and red team. Many of the things you learn to defend systems in this competition will directly translate to real-world applicable cybersecurity skills.
 
-When initially given the blue team manual before the qualifier round, the number one thing to do is enumerate the attack surfaces of your new machines. Here are some good questions that you should have answered as a team long before the competition begins.
-
-1. What operating systems are running? 
-2. What services are running on these boxes? 
-3. Are there any CVEs for these services? 
-4. How do you change the default credentials for these services? 
-5. What ports are required to stay open?
-
-### If you can't build the environment, there is no way you can defend it!
-
-Once you are told what the environment that you need to defend is going to look like, it is vital to replicate this environment as fast and as accurately as possible. The team should get practice with the services at hand and know how they operate, how they are configured, and how to make changes to them on the fly.
-
 ### Stop Chasing Ghosts!
 
 Many people will get caught up with the idea that a red team could be in their systems and will panic at everything they see that they do not recognize. Often the unknown files, processes, or user accounts are standard Linux or Windows features. Chasing these leads that turn out to be nothing malicious will only eat up time and will allow the red team to gain an advantage. **It is vital to understand the machine you are defending!** If you do not know what the baseline normal is for a machine, you cannot possibly identify an anomaly. This is a major reason for replicating the target environment before the competition. It would be wise to get a list of the common files, processes, and user accounts for the operating systems that you will be defending to minimize your time chasing ghosts.
@@ -95,6 +83,7 @@ As soon as you gain access to your new machines during the competition, every si
 - [pspy](https://github.com/DominicBreuker/pspy)
 
 ### Windows
+
 
 1. Change **all** user passwords. *Yes, especially the credentials given to you!*
 
