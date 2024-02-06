@@ -16,10 +16,15 @@ General Usage
 
 * Start a tmux session with
 
-   ``` sh
+   ```sh
    tmux
    ```
+* Join an existing session with
 
+   ```sh
+   tmux attach
+   ```
+   
 * Select text in a tmux window with your mouse by holding the `SHIFT` key (Windows) or the `OPTIONS` key (Mac) and then using the mouse as you'd normally do
 
 
@@ -28,24 +33,26 @@ Shortcuts
 
 | Key(s)  | Description |
 | :-----: | ----------- |
-| `CTRL`+`b` `<command>` | sends `<command>` to tmux instead of sending it to the shell |
-| | **General Commands** |
+| `CTRL`+`b` `<command>` | sends `<command>` to tmux instead of sending it to the shell <br> YOU MUST TYPE <kbd>CTRL</kbd>+<kbd>b</kbd> TO USE THE COMMANDS BELOW |
+| <hr> | **General Commands** |
 | `?` | shows a list of all commands (`q`closes the list) |
 | `:` | enter a tmux command |
-| | **Working with Windows** |
+| <hr> | **Working with Windows** |
 | `c` | creates a new window |
 | `,` | rename current window |
 | `p` | switch to previous window |
 | `n` | switch to next window |
 | `w` | list windows (and then select with arrow keys) |
-| | **Working with Panes** |
-| `%`          | split window vertically |
-| `-`          | split window horizontally <br> requires `bind - split-window -v` in our `.tmux.conf` |
+| <hr> | **Working with Panes** |
+| `%`          | split pane vertically |
+| `"`          | split pane horizontally |
 | →          | go to right pane |
 | ←          | go to left pane |
 | ↑          | go to upper pane |
 | ↓          | go to lower pane |
-| | **Working with Sessions** |
+| `{`        | Move the current pane left |
+| `}`        | Move the current pane right |
+| <hr> | **Working with Sessions** |
 | `d` | detach from session |
 
 
@@ -147,6 +154,7 @@ set -g mouse-select-window on
 Further Resources
 =================
 
+* [cheat sheet website](https://tmuxcheatsheet.com/)
 * [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 * [tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 * [tmux tutorial - part 1](http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/)
